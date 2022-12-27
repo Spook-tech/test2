@@ -135,6 +135,11 @@ $(document).ready(function () {
                 function() {
                     $( this ).css("width", "calc(100% / 3)");
                     $( this ).prev().css("width", "calc(100% / 3)");
+
+                    $(this).find('.img__item    ').animate({
+                        scrollTop: 0,
+                        scrollLeft: 0
+                    }, 'smooth'); 
                 }
             );
 
@@ -146,6 +151,11 @@ $(document).ready(function () {
                 function() {
                     $( this ).next().css("width", "calc(100% / 3)");
                     $( this ).css("width", "calc(100% / 3)");
+
+                    $(this).find('.img__item    ').animate({
+                        scrollTop: 0,
+                        scrollLeft: 0
+                    }, 'smooth'); 
                 }
             );
         }
